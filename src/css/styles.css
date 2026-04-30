@@ -1,18 +1,82 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
-
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+*{
+  margin: 0;
+  padding: 0;
+}
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+a{
+  display: block;
+}
+input {
+  margin-top: 24px;
+  margin-left: 24px;
+  height: 1.5rem;
+}
+button {
+  cursor: pointer;
+  width: 3rem;
+  height: 1.5rem;
+}
+.timer {
+  display: flex;
+}
+.field {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap : 8px;
+  margin-left: 24px;
+}
+.value {
+  font-size: 36px;
+  font-weight: 500;
+}
+.label {
+  text-transform: uppercase;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  row-gap: 12px;
+  margin-left: 24px;
+}
+.form > button {
+  width: 100%;
+}
+.form > fieldset {
+  position: relative;
+  display: flex;
+  gap: 24px;
+}
+.form legend{
+  position: absolute;
+  top : -10px;
+  left: 10px;
+  z-index: 2;
+  background-color: white;
+}
+.form fieldset label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  gap : 8px;
+  margin : 12px 0 12px 24px;
+}
+input[type="radio"] {
+  margin : 0;
+}
+.form > label {
+  display: flex;
+  flex-direction: column;
+  gap : 8px
+}
+.form input[type="number"] {
+  width: 100%;
+  margin : 0;
+  padding: 0;
+}

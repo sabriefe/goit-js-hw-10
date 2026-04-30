@@ -1,0 +1,24 @@
+.iziToast>.iziToast-close {
+  right: auto;
+  left: 10px;
+  background: none !important;
+  opacity: 1;
+}
+
+.iziToast>.iziToast-close::before {
+  content: "×";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border: 2px solid rgb(131, 28, 28);
+  border-radius: 50%;
+  color: rgb(131, 28, 28);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.iziToast>.iziToast-body {
+  margin-left: 35px;
+}
